@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: codespace-starter
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: GITHUB_TOKEN
+        value: your_github_token_here  # You'll update this securely in Render's dashboard
