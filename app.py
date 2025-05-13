@@ -5,7 +5,7 @@ import os
 app = Flask(__name__)
 
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN")
-REPO = "your-username/your-repo-name"
+REPO = "EvanUsesRust/Webstart"
 HEADERS = {
     "Authorization": f"Bearer {GITHUB_TOKEN}",
     "Accept": "application/vnd.github+json"
